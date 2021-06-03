@@ -414,6 +414,67 @@
 											</div>
 										</div>
 
+										<script>
+												// чекбоксы
+												window.addEventListener("load", () => {
+													document.querySelectorAll(".weight_item__checkbox").forEach(check => check.addEventListener("click", e => {
+														if (e.target.classList.contains("weight_item__checkbox")) {
+															if (e.target.classList.contains("activeCheckbox")) e.target.classList.remove("activeCheckbox");
+															else e.target.classList.add("activeCheckbox");
+														};
+													}));
+												});
+										</script>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+											  <h4 class="panel-title">
+													<a data-toggle="collapse" href="#collapseWeight">
+														<i class="fa fa-caret-right"></i> Вес
+													</a>
+											  </h4>
+											</div>
+											<div id="collapseWeight" class="panel-collapse collapse in collapse__weight">
+												 <div class="panel-body">
+														<div class="collapse__weight_item">
+															<li class="weight_item__field">
+																<label class="weight_item__checkbox"></label>  45 гр
+															</li>
+															<li class="weight_item__field">
+																<label class="weight_item__checkbox"></label> 65 гр
+															</li>
+															<li class="weight_item__field">
+																<label class="weight_item__checkbox"></label> 75 гр
+															</li>
+															<li class="weight_item__field">
+																<label class="weight_item__checkbox"></label> 80 гр
+															</li>
+															<li class="weight_item__field">
+																<label class="weight_item__checkbox"></label> 100 гр
+															</li>
+															<li class="weight_item__field">
+																<label class="weight_item__checkbox"></label> 4 шт
+															</li>
+														</div>
+														<div class="collapse__weight_item">
+															 <li class="weight_item__field">
+																 <label class="weight_item__checkbox"></label> 6 шт
+															 </li>
+															 <li class="weight_item__field">
+																 <label class="weight_item__checkbox"></label> 8 шт
+															 </li>
+															 <li class="weight_item__field">
+																 <label class="weight_item__checkbox"></label> 12 шт
+															 </li>
+															 <li class="weight_item__field">
+																 <label class="weight_item__checkbox"></label> 16 шт
+															 </li>
+															 <li class="weight_item__field">
+																 <label class="weight_item__checkbox"></label> Другое
+															 </li>
+														</div>
+												 </div>
+											</div>
+										</div>
 
 										<div class="panel panel-default">
 											<div class="panel-heading">
@@ -425,40 +486,20 @@
 											</div>
 											<div id="collapsePrice" class="panel-collapse collapse in">
 												<div class="panel-body priceFilterBody">
-													<label>
-														<input type="radio" name="agree" value="0"/>
-														100 <i class="fa fa-rub"></i> - 500 <i class="fa fa-rub"></i></label>
-													<br>
-													<label>
-														<input type="radio" name="agree" value="1"/>
-														500 <i class="fa fa-rub"></i> - 1000 <i class="fa fa-rub"></i></label>
-													<br>
-													<label>
-														<input type="radio" name="agree" value="2"/>
-														1000 <i class="fa fa-rub"></i> - 1500 <i class="fa fa-rub"></i></label>
-													<br>
-													<label>
-														<input type="radio" name="agree" value="3"/>
-														1500 <i class="fa fa-rub"></i> - 2000 <i class="fa fa-rub"></i></label>
-													<br>
-													<label>
-														<input type="radio" name="agree" value="4"/>
-														2000 <i class="fa fa-rub"></i> - 2500 <i class="fa fa-rub"></i></label>
-													<br>
-													<label>
-														<input type="radio" name="agree" value="5"/>
-														2500 <i class="fa fa-rub"></i> - 3000 <i class="fa fa-rub"></i></label>
-
-													<hr>
-													<p>Ценовой диапазон</p>
-													<div class="form-group">
-														<input type="text" class="form-control" placeholder="2000 Р">
-													</div>
-													<div class="form-group sp"></div>
-													<div class="form-group">
-														<input type="text" class="form-control" placeholder="3000 Р">
-													</div>
-													<button type="submit" class="btn btn-default pull-right">Искать</button>
+													<h4 class="panel-price_title">Цена</h4>
+													<input type="range" min="0" max="5000" class="panel-price_range">
+													<script>
+														// вывод выбраной по фильтру цены в блок.
+														let value;
+														document.querySelector(".panel-price_range").addEventListener("change", e => {
+															value = e.target.value;
+															document.querySelector(".panel-price_count__number").innerText = `${value}₽`;
+														});
+													</script>
+													<h4 class="panel-price_count">
+														 Стоимость: <span class="panel-price_count__number">0₽</span> - 5000₽
+														 <span class="panel-price_accept-filter">Применить</span>
+													 </h4>
 												</div>
 											</div>
 										</div>
@@ -676,6 +717,7 @@
 												</div>
 											</div>
 										</div>
+
 										<div class="panel-bottom">
 											<div class="col-md-6 panel-bottom-block">
 												<input class="btn btn-color" type="submit" value="Применить">
