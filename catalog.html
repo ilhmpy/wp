@@ -6,6 +6,8 @@
 		<title>Сайт за 19500 | Каталог</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+		integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/block-css/style.css">
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 			<!--[if lt IE 9]>
@@ -414,93 +416,86 @@
 											</div>
 										</div>
 
-										<script>
-												// чекбоксы
-												window.addEventListener("load", () => {
-													document.querySelectorAll(".weight_item__checkbox").forEach(check => check.addEventListener("click", e => {
-														if (e.target.classList.contains("weight_item__checkbox")) {
-															if (e.target.classList.contains("activeCheckbox")) e.target.classList.remove("activeCheckbox");
-															else e.target.classList.add("activeCheckbox");
-														};
-													}));
-												});
-										</script>
-										<div class="panel panel-default">
-											<div class="panel-heading">
-											  <h4 class="panel-title">
-													<a data-toggle="collapse" href="#collapseWeight">
-														<i class="fa fa-caret-right"></i> Вес
-													</a>
-											  </h4>
-											</div>
-											<div id="collapseWeight" class="panel-collapse collapse in collapse__weight">
-												 <div class="panel-body">
-														<div class="collapse__weight_item">
+										<div class="panel panel-default" style="border: 0; box-shadow: 0;">
+											<div class="panel-body collapse__weight">
+												<h4 class="panel_title collapse__weight_title">Вес</h4>
+												 <div class="panel_price__items">
+													 <div class="collapse__weight_item">
+														 <li class="weight_item__field">
+															 <label class="weight_item__checkbox"></label>  45 гр
+														 </li>
+														 <li class="weight_item__field">
+															 <label class="weight_item__checkbox"></label> 65 гр
+														 </li>
+														 <li class="weight_item__field">
+															 <label class="weight_item__checkbox"></label> 75 гр
+														 </li>
+														 <li class="weight_item__field">
+															 <label class="weight_item__checkbox"></label> 80 гр
+														 </li>
+														 <li class="weight_item__field">
+															 <label class="weight_item__checkbox"></label> 100 гр
+														 </li>
+														 <li class="weight_item__field">
+															 <label class="weight_item__checkbox"></label> 4 шт
+														 </li>
+													 </div>
+													 <div class="collapse__weight_item">
 															<li class="weight_item__field">
-																<label class="weight_item__checkbox"></label>  45 гр
+																<label class="weight_item__checkbox"></label> 6 шт
 															</li>
 															<li class="weight_item__field">
-																<label class="weight_item__checkbox"></label> 65 гр
+																<label class="weight_item__checkbox"></label> 8 шт
 															</li>
 															<li class="weight_item__field">
-																<label class="weight_item__checkbox"></label> 75 гр
+																<label class="weight_item__checkbox"></label> 12 шт
 															</li>
 															<li class="weight_item__field">
-																<label class="weight_item__checkbox"></label> 80 гр
+																<label class="weight_item__checkbox"></label> 16 шт
 															</li>
 															<li class="weight_item__field">
-																<label class="weight_item__checkbox"></label> 100 гр
+																<label class="weight_item__checkbox"></label> Другое
 															</li>
-															<li class="weight_item__field">
-																<label class="weight_item__checkbox"></label> 4 шт
-															</li>
-														</div>
-														<div class="collapse__weight_item">
-															 <li class="weight_item__field">
-																 <label class="weight_item__checkbox"></label> 6 шт
-															 </li>
-															 <li class="weight_item__field">
-																 <label class="weight_item__checkbox"></label> 8 шт
-															 </li>
-															 <li class="weight_item__field">
-																 <label class="weight_item__checkbox"></label> 12 шт
-															 </li>
-															 <li class="weight_item__field">
-																 <label class="weight_item__checkbox"></label> 16 шт
-															 </li>
-															 <li class="weight_item__field">
-																 <label class="weight_item__checkbox"></label> Другое
-															 </li>
-														</div>
+													 </div>
 												 </div>
 											</div>
 										</div>
 
-										<div class="panel panel-default">
-											<div class="panel-heading">
-												<h4 class="panel-title">
-													<a data-toggle="collapse" href="#collapsePrice">
-														<i class="fa fa-caret-right"></i>Цена
-													</a>
-												</h4>
-											</div>
-											<div id="collapsePrice" class="panel-collapse collapse in">
-												<div class="panel-body priceFilterBody">
-													<h4 class="panel-price_title">Цена</h4>
-													<input type="range" min="0" max="5000" class="panel-price_range">
-													<script>
-														// вывод выбраной по фильтру цены в блок.
-														let value;
-														document.querySelector(".panel-price_range").addEventListener("change", e => {
-															value = e.target.value;
-															document.querySelector(".panel-price_count__number").innerText = `${value}₽`;
+										<script>
+												// чекбоксы
+												document.querySelectorAll(".weight_item__checkbox").forEach(function(check) {
+													check.addEventListener("click", function(e) {
+														if (e.target.classList.contains("weight_item__checkbox")) {
+															if (e.target.classList.contains("activeCheckbox")) { e.target.classList.remove("activeCheckbox"); }
+															else { e.target.classList.add("activeCheckbox"); }
+														};
+													});
+												});
+										</script>
+
+										<div class="panel panel-default" style="border: 0; box-shadow: 0;">
+											<div class="panel-body priceFilterBody">
+												<h4 class="panel_title">Цена</h4>
+												<input type="range" min="0" max="5000" class="panel-price_range" value="0" data-range="start">
+												<input type="range" min="0" max="5000" class="panel-price_range" value="5000" data-range="end">
+												<script>
+													// вывод выбраной по фильтру цены в блок.
+													var start = 0;
+													var end = 0;
+
+													document.querySelectorAll(".panel-price_range").forEach(function(range) {
+														range.addEventListener("change", function(e) {
+															if (e.target.dataset.range == "start") { start = e.target.value; }
+															else { end = e.target.value };
+															document.querySelector("#start").innerText = start + "₽";
+															document.querySelector("#end").innerText = end + "₽";
 														});
-													</script>
-													<h4 class="panel-price_count">
-														 Стоимость: <span class="panel-price_count__number">0₽</span> - 5000₽
-														 <span class="panel-price_accept-filter">Применить</span>
-													 </h4>
-												</div>
+													});
+												</script>
+												<h4 class="panel-price_count">
+													 от <span class="panel-price_count__number" id="start">0₽</span> до <span class="panel-price_count__number" id="end">5000₽</span>
+													 <span class="panel-price_accept-filter">Применить</span>
+												 </h4>
 											</div>
 										</div>
 
@@ -581,7 +576,6 @@
 															Производитель 11
 														</label>
 													</div>
-
 												</div>
 											</div>
 										</div>
@@ -738,19 +732,38 @@
 									 <div class="product-filter clearfix">
 										<p class="pull-left">Показано продуктов: <strong>9</strong></p>
 
+										<script>
+											window.addEventListener("load", () => {
+												let inner = document.querySelector(".product-filter__select_title");
+												let clicks = 0;
+												document.querySelector('.product-filter__select').addEventListener("click", e => {
+													if (e.target.className == "product-filter__select" || e.target.className == "product-filter__select_title") {
+														clicks++;
+														document.querySelector(".product-filter__select_items").style.display = "block";
+														if (clicks >= 2) {
+															document.querySelector(".product-filter__select_items").style.display = "none";
+															clicks = 0;
+														};
+													};
+													if (e.target.className == "select_items__item") inner.innerText = e.target.innerText;
+												});
+											});
+										</script>
+
 										<div class="pull-right">
-											<div class="change-order pull-right">
-												<select class="form-control" name="orderby">
-													<option selected="selected">Сортировать по:</option>
-													<option value="popularity">увеличению цены</option>
-													<option value="rating">уменьшению цены</option>
-													<option value="date">новизне</option>
-													<option value="price">популярности</option>
-												</select>
-											</div>
 											<div class="change-view pull-right">
-												<a href="#" class="grid-view active"> <i class="fa fa-th-large"></i> </a>
+												<a href="#" class="grid-view active"><i class="fa fa-th-large"></i></a>
 												<a href="#" class="list-view "><i class="fa fa-th-list"></i></a>
+											</div>
+											<div class="product-filter__select">
+											  <span class="product-filter__select_title">Сортировка по:</span><i class="fas fa-chevron-down"></i>
+												<div class="product-filter__select_items">
+													<div class="select_items__item">Сортировать по:</div>
+													<div class="select_items__item">увеличению цены</div>
+													<div class="select_items__item">уменьшению цены</div>
+													<div class="select_items__item">новизне</div>
+													<div class="select_items__item">популярности</div>
+												</div>
 											</div>
 										</div>
 									</div>

@@ -464,7 +464,7 @@
     border: none;
     padding: 7px 12px;
 }
-.rs-17 .panel-group .panel .panel-price_title {
+.rs-17 .panel-group .panel .panel_title {
 	-webkit-font-size: 1em;
 	-o-font-size: 1em;
 	-moz-font-size: 1em;
@@ -552,6 +552,7 @@ input[type=range] {
 	position: relative;
 	grid-gap: 5px;
 	font-size: .80em;
+	-moz-word-spacing: 5px;
 	font-weight: 400;
 	color: #586b89;
 }
@@ -573,6 +574,9 @@ input[type=range] {
 	width: 50%;
 	height: inherit;
 }
+.rs-17 .panel-collapse .panel-body .collapse__weight_title {
+	margin-bottom: 10px;
+}
 .rs-17 .panel-group .panel .collapse__weight_item .weight_item__field {
 	list-style-type: none;
 	display: flex;
@@ -590,6 +594,7 @@ input[type=range] {
 	width: 16px;
 	height: 16px;
 	display: block;
+	-moz-margin-right: 10px;
 	border: 1px solid #586b89;
 	background: #fff;
 	border-radius: 2px;
@@ -604,6 +609,57 @@ input[type=range] {
 	margin-left: 2px;
 	border-radius: 2px;
 	background: #586b89;
+}
+.product-filter .pull-right  {
+	display: flex;
+}
+.product-filter .pull-right .product-filter__select {
+	box-sizing: border-box;
+	font-size: 1em;
+	height: 34px;
+	width: 230px;
+	position: relative;
+	font-weight: 400;
+	border-radius: 1px;
+	align-items: center;
+	padding-left: 20px;
+	display: flex;
+	border: 1px solid #586b89;
+	cursor: pointer;
+}
+.product-filter .pull-right .product-filter__select > i {
+	position: absolute;
+	right: 0;
+	margin-right: 10px;
+}
+.product-filter .pull-right .product-filter__select .product-filter__select_title {
+	font-size: .90em;
+	font-weight: 500;
+	color: #586b89;
+	margin-top: 2px;
+	text-transform: uppercase;
+}
+.product-filter .pull-right .product-filter__select .product-filter__select_items {
+	position: absolute;
+	z-index: 99;
+	background: #fff;
+	width: 230px;
+	display: none;
+	margin-top: 210px;
+	margin-left: -22px;
+}
+.product-filter .pull-right .product-filter__select .product-filter__select_items .select_items__item {
+	width: 100%;
+	height: 35px;
+	padding-left: 23px;
+	color: #586b89;
+	text-transform: uppercase;
+	font-size: .90em;
+	display: flex;
+	align-items: center;
+}
+.product-filter .pull-right .product-filter__select .product-filter__select_items .select_items__item:hover {
+	background: #cccc;
 }
 @media (max-width: 1199px){
 	.rs-17 .panel-group .priceFilterBody  .form-group{
@@ -668,5 +724,10 @@ input[type=range] {
 	.rs-17 .panel-group .list-view .action-control,
 	.rs-17 .panel-group .list-view .description p {
 		text-align: center;
+	}
+	.product-filter .pull-right .product-filter__select {
+		margin-top: 11px;
+		position: absolute;
+		right: 15px;
 	}
 }
