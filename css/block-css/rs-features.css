@@ -1,0 +1,51 @@
+﻿.rs-17 .rs-features .feature-block{
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+	margin-left: -4px;
+}
+.rs-17 .rs-features .feature-item{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.rs-17 .rs-features .feature-item h4{
+	font-weight: 700;
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+.rs-17 .rs-features .feature-item p{
+	color: #616161;
+}
+.rs-17 .rs-features .feature-item--icon{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+	
+}
+.rs-17 .rs-features .feature-item--icon img{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	margin: 0 auto;
+	-webkit-filter: grayscale(100%) contrast(0);
+    -moz-filter: grayscale(100%) contrast(0);
+    -o-filter: grayscale(100%) contrast(0);
+    -ms-filter: grayscale(100%) contrast(0);
+    filter: grayscale(100%) contrast(0);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+	cursor:pointer;
+}
+.rs-17 .rs-features .feature-item:hover img {
+    -webkit-filter: grayscale(0) contrast(100%);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    filter: grayscale(0);
+}

@@ -1,0 +1,251 @@
+﻿.rs-17 .rs-new-products .section-title{
+	position: relative;
+}
+.rs-17 .rs-new-products .section-title--text{
+	display: inline-block;
+	font-size: 36px;
+	font-weight: 300;
+	background-color: #fff;
+	width: auto;
+	padding: 10px;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 2;
+}
+.rs-17 .rs-new-products .section-title:after{
+	background: #DDDDDD;
+    content: "";
+    display: block;
+    height: 1px;
+    margin-left: 16%;
+    position: absolute;
+    top: 30px;
+    width: 68%;
+    z-index: 1;
+}
+.rs-17 .rs-new-products .quickview {
+	display: block;
+	top: 50%;
+	margin-top: -25px;
+    max-height: 50px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.rs-17 .rs-new-products #product-slider{
+	text-align: center;
+	height: 0;
+	margin-top: 20px;
+	-moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+	overflow: hidden;
+}
+.rs-17 .rs-new-products #product-slider.owl-loaded{
+	height: auto;
+	margin-top: 0;
+}
+.rs-17 .rs-new-products #product-slider .product-item {
+    margin: 30px 15px 25px;
+}
+.rs-17 .rs-new-products #product-slider .owl-dots{
+	text-align: center;
+	margin-top: 2px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.rs-17 .rs-new-products #product-slider .owl-dot {
+    display: inline-block;
+	vertical-align: middle;
+}
+.rs-17 .rs-new-products #product-slider .owl-dots span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 5px 7px;
+    border-radius: 20px;
+    background: #cccccc;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.2);
+}
+.rs-17 .rs-new-products #product-slider .owl-dot.active span{
+	background: #757575;
+}
+.rs-17 .rs-new-products #product-slider .owl-prev,
+.rs-17 .rs-new-products #product-slider .owl-next{
+	display: inline-block;
+	cursor: pointer;
+	font-size: 21px;
+	color: #424242;
+	vertical-align: middle;
+}
+.rs-17 .rs-new-products #product-slider .owl-prev{
+	margin-right: 5px;
+}
+.rs-17 .rs-new-products #product-slider .owl-next{
+	margin-left: 5px;
+}
+.rs-17 .rs-new-products .product-item{
+    display: block;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    margin-bottom: 15px;
+    height: 475px;
+}
+.rs-17 .rs-new-products .product-item h3 {
+    margin: 0;
+	height: 42px;
+    overflow: hidden;
+    display: block;
+    line-height: 21px;
+    margin: 25px 0 5px;
+    padding: 0;
+}
+.rs-17 .rs-new-products .product-item h3 a {
+    font-weight: 700;
+    color: #424242;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.rs-17 .rs-new-products .description{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.rs-17 .rs-new-products .description p{
+	color: #616161;
+    font-size: 14px;
+    height: 55px;
+    line-height: 18px;
+	overflow: hidden;
+}
+
+.rs-17 .rs-new-products .product{
+    display: block;
+    height: auto;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+	overflow: hidden;
+}
+.rs-17 .rs-new-products .product:hover{
+    border: 1px solid #4ec67f;
+}
+.rs-17 .rs-new-products .product-image{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 240px;
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+}
+.rs-17 .rs-new-products .product-image a{
+	display: block;
+	height: 100%;
+    overflow: hidden;
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.rs-17 .rs-new-products .product:hover .product-image > a {
+    
+    -moz-transform: scale3d(1.1, 1.1, 1) rotate(-1.5deg);
+    -ms-transform: scale3d(1.1, 1.1, 1) rotate(-1.5deg);
+    -o-transform: scale3d(1.1, 1.1, 1) rotate(-1.5deg);
+    -webkit-transform: scale3d(1.1, 1.1, 1) rotate(-1.5deg);
+	transform: scale3d(1.1, 1.1, 1) rotate(-1.5deg);
+}
+.rs-17 .rs-new-products .promotion {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    left: 0;
+    height: 25px;
+    width: auto;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+}
+.rs-17 .rs-new-products .promotion li{
+	display: inline-block;
+	margin-left: -4px;
+}
+.rs-17 .rs-new-products .promotion li:last-child{
+	border-radius: 0 4px 4px 0;
+}
+.rs-17 .rs-new-products .new {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 14px;
+    height: 100%;
+    padding: 3px 10px;
+	background-color: #4ec67f;
+}
+.rs-17 .rs-new-products .discount {
+    background: #e64c3c;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    height: 100%;
+    padding: 3px 5px;
+	text-transform: uppercase;
+}
+.rs-17 .rs-new-products  .price {
+    font-size: 16px;
+    font-weight:700;
+    color: #424242;
+	line-height: 1.7;
+}
+.rs-17 .rs-new-products .description .sub-description{
+	font-weight: 300;
+	color: #616161;
+	line-height: 1.7;
+}
+.rs-17 .rs-new-products .action-control {
+    border: 0;
+    display: block;
+    height: auto;
+    padding: 5px 0 15px;
+    width: 100%;
+}
+.rs-17 .rs-new-products .action-control .btn-color{
+	box-shadow: 0 2px 0 rgba(0,0,0,.2);
+}
+.rs-17 .rs-new-products .product:hover .btn-quickview {
+    visibility: visible;
+    opacity: 0.85;
+    -webkit-opacity: 0.85;
+    -ms-opacity: 0.85;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+}
+@media (max-width: 767px){
+	.rs-17 .rs-new-products .section-title--text{
+		font-size: 28px;
+	}
+}

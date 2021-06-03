@@ -1,0 +1,95 @@
+﻿.rs-17 .rs-contacts{
+	padding-top: 20px;
+	padding-bottom: 55px;
+}
+.rs-17 .rs-contacts .section-title{
+	position: relative;
+}
+.rs-17 .rs-contacts .section-title--text{
+	display: inline-block;
+	font-size: 36px;
+	font-weight: 300;
+	background-color: #fff;
+	width: auto;
+	padding: 10px;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 2;
+}
+.rs-17 .rs-contacts .section-title:after{
+	background: #DDDDDD;
+    content: "";
+    display: block;
+    height: 1px;
+    margin-left: 16%;
+    position: absolute;
+    top: 30px;
+    width: 68%;
+    z-index: 1;
+}
+.rs-17 .rs-contacts h4{
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.rs-17 .rs-contacts p{
+	color: #616161;
+	line-height: 21px;
+}
+.rs-17 .rs-contacts ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.rs-17 .rs-contacts ul li{
+	padding-bottom: 1px;
+}
+.rs-17 .rs-contacts ul li,
+.rs-17 .rs-contacts ul li a{
+	color: #616161;
+}
+.rs-17 .rs-contacts .contacts-form{
+	    margin-top: 20px;
+}
+.rs-17 .rs-contacts .contacts-form  .form-group{
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 18px;
+}
+.rs-17 .rs-contacts .contacts-form .form-control{
+	height: 40px;
+}
+.rs-17 .rs-contacts .contacts-form textarea.form-control{
+	height: auto;
+}
+.rs-17 .rs-contacts .contacts-form .form-control:focus {
+    border-color: #4ec67f;
+    outline: 0;
+    box-shadow: none;
+}
+.rs-17 .rs-contacts .contacts-form .btn-color{
+	padding: 10px 28px;
+	text-transform: uppercase;
+	box-shadow: 0 2px 0 #49b575;
+	-webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.rs-17 .rs-contacts .contacts-form .btn-color i{
+	padding-left: 5px;
+}
+.rs-17 .rs-contacts .contacts-map{
+	margin-top: 55px;
+}
+.rs-17 .rs-contacts .form-group input.error,
+.rs-17 .rs-contacts .form-group input.error:focus{
+	border:1px solid #d80000;
+}
+.rs-17 .rs-contacts .form-group label.error{
+	color: #d80000;
+	font-size: 13px;
+	font-weight: 400;
+}

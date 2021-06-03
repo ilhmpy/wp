@@ -1,0 +1,45 @@
+﻿.rs-17 .rs-parallax{
+	background: url("../../img/parallax.jpg") no-repeat center;
+	background-size: cover;
+	min-height: 400px;
+}
+.rs-17 .rs-parallax .container{
+	position: relative;
+	min-height: 400px;
+}
+.rs-17 .rs-parallax .parallax-title{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: #fff;
+}
+.rs-17 .rs-parallax .parallax-title h2{
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-shadow: 0 2px 5px #000;
+	letter-spacing: 1.5pt;
+}
+.rs-17 .rs-parallax .parallax-title h3{
+	font-size: 24px;
+	text-shadow: 0 2px 5px #000;
+	letter-spacing: 1.5pt;
+	font-weight: 400;
+	margin-top: 10px;
+}
+@media (min-width: 1025px){
+	.rs-17 .rs-parallax{
+		background-attachment: fixed;
+	}
+}
+@media (max-width: 767px){
+	.rs-17 .rs-parallax .parallax-title h2{
+		font-size: 24px;
+	}
+	.rs-17 .rs-parallax .parallax-title h3{
+		font-size: 18px;
+	}
+}

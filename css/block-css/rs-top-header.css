@@ -1,0 +1,184 @@
+.rs-17 .rs-top-header{
+	background-color: #1a1a1a;
+	height: 31px;
+	padding-top: 7px;
+}
+.rs-17 .rs-top-header .address-block{
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.07pt;
+}
+.rs-17 .rs-top-header .address-block i{
+	margin-right: 7px;
+}
+.rs-17 .rs-top-header .contacts-block{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.rs-17 .rs-top-header .contacts-block li{
+	margin-right: 15px;
+	margin-left: 15px;
+	display: inline-block;
+}
+.rs-17 .rs-top-header .contacts-block li a{
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	letter-spacing: 0.07pt;
+}
+.rs-17 .rs-top-header .contacts-block li a i{
+	margin-right: 9px;
+}
+.rs-17 .rs-top-header .contacts-block li a:hover,
+.rs-17 .rs-top-header .contacts-block li a:focus{
+	color: #fff;
+	text-decoration: none;
+}
+.rs-17 .rs-top-header .search-block{
+	margin-top: -4px;
+}
+.rs-17 .rs-top-header .search-btn,
+.rs-17 .rs-top-header .search-btn-inner{
+	color: #fff;
+	width: 25px;
+	height: 25px;
+	font-size: 14px;
+	border-radius: 2px;
+	padding: 3px;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	text-align: center;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.rs-17 .rs-top-header .search-btn:hover,
+.rs-17 .rs-top-header .search-btn:focus{
+	background-color: #fff;
+	color: #1a1a1a;
+}
+.rs-17 .rs-top-header .search-full{
+	display: none;
+	top: -7px;
+    background: #000;
+    height: 31px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+	width: 100%;
+    white-space: nowrap;
+    z-index: 10;
+}
+.rs-17 .rs-top-header .search-full.active{
+	display: block;
+}
+.rs-17 .rs-top-header .search-form{
+	height: 100%;
+}
+.rs-17 .rs-top-header .search-form  input{
+	border: 0 none;
+    padding: 1px;
+    color: #fff;
+    margin: 0;
+    outline: medium none;
+    text-align: right;
+    width: 100%;
+	height: 100%;
+    max-width: 90%;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.rs-17 .rs-top-header .search-form  input::-webkit-input-placeholder{ color: #fff;}
+.rs-17 .rs-top-header .search-form  input::-moz-placeholder{ color: #fff;}
+.rs-17 .rs-top-header .search-form  input:-moz-placeholder{ color: #fff;}
+.rs-17 .rs-top-header .search-form  input:-ms-input-placeholder{ color: #fff;}
+.rs-17 .rs-top-header .search-close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: rgba(255, 255, 255, .3);
+    height: 31px;
+	width: 47px;
+    font-size: 20px;
+    padding: 2px 15px;
+    color: #fff;
+}
+.rs-17 .rs-top-header .search-close i{
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+.rs-17 .rs-top-header .search-close:hover i{
+	cursor: pointer;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform:  rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+	transform:rotate(-180deg);
+}
+.rs-17 .rs-top-header .search-input-box {
+    display: block;
+    text-align: right;
+	padding-right: 53px;
+    width: 100%;
+	height: 100%;
+}
+.rs-17 .rs-top-header .search-input-box .search-btn-inner{
+	padding-right: 10px;
+}
+.rs-17 .rs-top-header .search-input-box .search-btn-inner:hover,
+.rs-17 .rs-top-header .search-input-box .search-btn-inner:focus{
+	color: #fff;
+	background: transparent;
+}
+@media (max-width: 991px){
+	.rs-17 .rs-top-header .address-block{
+		font-size: 10px;
+	}
+	.rs-17 .rs-top-header .contacts-block li a{
+		font-size: 12px;
+	}
+	.rs-17 .rs-top-header .contacts-block li{
+		margin-right: 7px;
+		margin-left: 7px;
+	}
+}
+@media screen and (max-width: 767px){
+	
+	.rs-17 .rs-top-header .contacts-block{
+		margin-top: -4px;
+	}
+	.rs-17 .rs-top-header .contacts-block li{
+		margin-right: 3px;
+		margin-left: 3px;
+	}
+	.rs-17 .rs-top-header .contacts-block li a{
+		width: 25px;
+		height: 25px;
+		text-align: center;
+		padding: 2px;
+	}
+	.rs-17 .rs-top-header .contacts-block li a i{
+		margin-right: 0;
+		vertical-align: middle;
+		font-size: 14px;
+	}
+	.rs-17 .rs-top-header .search-block{
+		margin-left: 6px;
+	}
+	.rs-17 .rs-top-header .search-form  input{
+		font-size: 13px;
+	}
+}

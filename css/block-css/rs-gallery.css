@@ -1,0 +1,171 @@
+﻿.rs-17 .rs-gallery .rs-gallery-inner{
+	padding-top: 20px;
+    padding-bottom: 25px;
+}
+.rs-17 .rs-gallery .section-title{
+	position: relative;
+}
+.rs-17 .rs-gallery .section-descr {
+	width: 70%;
+    text-align: center;
+    margin: 25px auto 40px;
+}
+.rs-17 .rs-gallery  .section-descr p{
+	color: #bdbdbd;
+	font-size: 18px;
+}
+.rs-17 .rs-gallery .section-title{
+	font-size: 38px;
+	font-weight: 300;
+	text-transform: uppercase;
+	background-color: #fff;
+}
+.rs-17 .rs-gallery .section-title--text{
+	display: inline-block;
+	width: auto;
+	background-color: #fff;
+	padding: 10px;
+	position: relative;
+	z-index: 2;
+}
+.rs-17 .rs-gallery .section-title:after{
+	background: #DDDDDD;
+    content: "";
+    display: block;
+    height: 1px;
+    margin-left: 16%;
+    position: absolute;
+    top: 30px;
+    width: 68%;
+    z-index: 1;
+}
+.rs-17 .rs-gallery .album-photo{
+	margin-bottom: 30px;
+	float: none;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: -4px;
+	text-align: center;
+}
+.rs-17 .rs-gallery .album-photo > a{
+	position: relative;
+	display: inline-block;
+}
+.rs-17 .rs-gallery .album-photo img{
+	margin: 0 auto;
+}
+.rs-17 .rs-gallery .album-photo a:before {
+	content: '';
+	opacity: 0;
+	position: absolute;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	display: block;
+    z-index: 2;
+	width: 100%;
+    height: 100%;
+	background: rgba(0, 0, 0, .3);
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.rs-17 .rs-gallery .gallery-block{
+
+}
+.rs-17  .rs-gallery .gallery-item{
+    display: block;
+	background-color: #fafafa;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    margin-bottom: 30px;
+    height: 400px;
+	border-radius: 6px 6px 0 0;
+	overflow: hidden;
+}
+.rs-17  .rs-gallery .gallery-title h4 {
+    margin: 0;
+	height: 42px;
+    overflow: hidden;
+    display: block;
+    line-height: 21px;
+    margin: 25px 0 7px;
+    padding: 0 5px;
+}
+.rs-17  .rs-gallery .gallery-title h4 a {
+    font-weight: 700;
+    color: #424242;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.rs-17 .rs-gallery .gallery-content{
+	margin-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.rs-17 .rs-gallery .gallery-item{
+    display: block;
+    height: auto;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    text-align: center;
+	overflow: hidden;
+}
+
+.rs-17 .rs-gallery .gallery-image{
+    display: block;
+    overflow: hidden;
+    position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    height: 215px;
+}
+
+.rs-17 .rs-gallery .gallery-more {
+    border: 0;
+    display: block;
+    height: auto;
+    padding: 5px 0 30px;
+    width: 100%;
+	
+}
+.rs-17 .rs-gallery .gallery-content p{
+	color: #616161;
+	height: 42px;
+	overflow: hidden;
+}
+
+.rs-17 .rs-gallery .btn-outline{
+	border-color: #9e9e9e;
+	color: #616161;
+	text-shadow: none;
+	font-weight: 700;
+}
+.rs-17 .rs-gallery .btn-outline:hover,
+.rs-17 .rs-gallery .btn-outline:focus{
+	background-color: #818181;
+	color: #fff;
+}
+.rs-17 .rs-gallery .album-photo a:hover:before {
+	opacity: 1;
+}
+@media (max-width: 767px){
+	.rs-17 .rs-gallery .section-title--text {
+		font-size: 28px;
+	}
+	.rs-17 .rs-gallery.section-descr{
+		width: 100%;
+	}
+}

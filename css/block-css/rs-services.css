@@ -1,0 +1,160 @@
+﻿.rs-17 .rs-services{
+	padding-top: 15px;
+}
+.rs-17 .rs-services .section-title{
+	position: relative;
+}
+.rs-17 .rs-services .section-title--text{
+	display: inline-block;
+	font-size: 36px;
+	font-weight: 300;
+	background-color: #fff;
+	width: auto;
+	padding: 10px;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 2;
+}
+.rs-17 .rs-services .section-title:after{
+	background: #DDDDDD;
+    content: "";
+    display: block;
+    height: 1px;
+    margin-left: 16%;
+    position: absolute;
+    top: 30px;
+    width: 68%;
+    z-index: 1;
+}
+.rs-17 .rs-services .services-row{
+	margin-top: 30px;
+}
+.rs-17 .rs-services .services-item{
+	position: relative;
+    overflow: hidden;
+	margin-bottom: 30px;
+}
+.rs-17 .rs-services .services-item--title{
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+    text-align: center;
+}
+.rs-17 .rs-services .services-item--title h3{
+	position: absolute;
+    z-index: 11;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    padding: 0 15px;
+    font-weight: 500;
+    font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 0 2px 2.7px rgba(0, 0, 0, 0.6);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.rs-17 .rs-services .services-item--title h3 i{
+	padding-left: 12px;
+	opacity: 1;
+	-webkit-transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in;
+    -o-transition: opacity .3s ease-in;
+    -ms-transition: opacity .3s ease-in;
+    transition: opacity .3s ease-in;
+}
+.rs-17 .rs-services .services-item--img{
+	height: 240px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	z-index: 1;
+	-webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    -ms-transition: all .4s ease-in;
+    transition: all .4s ease-in;
+}
+.rs-17 .rs-services .services-item .overlay {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.rs-17 .rs-services .services-item:hover .overlay {
+    opacity: 1;
+    background: rgba(0,0,0,.3);
+    z-index: 10;
+}
+.rs-17 .rs-services .services-item > a img {
+    display: block;
+    margin: 0 auto;
+	-webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    -ms-transition: all .4s ease-in;
+    transition: all .4s ease-in;
+}
+.rs-17 .rs-services .services-item:hover .services-item--img{
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+.rs-17 .rs-services .services-item:hover h3 i {
+	opacity: 0;
+}
+.rs-17 .rs-services .services-item:hover h3{
+	font-size: 21px;
+}
+@media (max-width: 991px){
+	.rs-17 .rs-services .services-item--title h3{
+		font-size: 16px;
+	}
+	.rs-17 .rs-services .services-item:hover h3{
+		font-size: 18px;
+	}
+}
+@media (max-width: 767px){
+	.rs-17 .rs-services .section-title--text{
+		font-size: 28px;
+	}
+	.rs-17 .rs-services .services-item--title h3{
+		font-size: 18px;
+	}
+	.rs-17 .rs-services .services-item:hover h3{
+		font-size: 20px;
+	}
+	.rs-17 .rs-services .services-item{
+		max-width: 360px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media (max-width: 480px){
+	.rs-17 .rs-services .services-item--title h3{
+		font-size: 16px;
+	}
+	.rs-17 .rs-services .services-item:hover h3{
+		font-size: 18px;
+	}
+}
