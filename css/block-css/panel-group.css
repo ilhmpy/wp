@@ -138,7 +138,6 @@
 	font-size: 24px;
 	text-transform: uppercase;
 	font-weight: 700;
-	margin-top: 0;
 	margin-bottom: 25px;
 }
 .rs-17 .panel-group .category-top p{
@@ -726,15 +725,6 @@ input[type=range] {
 @media (max-width: 480px){
 	.xsResponse .product-item {
 		width: 100% !important;
-	}
-	.rs-17 .panel-group .list-view .product-image {
-		display: block;
-		float: none;
-		max-height: 500px;
-		max-width: 100%;
-		overflow: hidden;
-		padding-right: 0;
-		text-align: center;
 	}
 	.rs-17 .panel-group .list-view .product{
 		padding-right: 0;
