@@ -1,5 +1,6 @@
 ﻿.rs-17 .rs-product{
 	padding-bottom: 40px;
+	background: linear-gradient(90deg, #fff 50%, #fafafb 50%);
 }
 .rs-17 .rs-product .rs-product-carousel .carousel-indicators {
     width: 100%;
@@ -28,7 +29,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #000;
     position: relative;
 }
 .rs-17 .rs-product .rs-product-carousel.product-carousel-item{
@@ -50,6 +50,7 @@
     height: 553px;
     border-radius: 0;
     box-shadow: none;
+		background: #fff;
 	 	position: relative;
 }
 .rs-17 .rs-product .rs-product-carousel .carousel-inner>.item {
@@ -168,33 +169,42 @@
 }
 .rs-product-content {
 	background: #fafafb;
+	padding-left: 36px;
 }
 .rs-17 .rs-product-content .product-content__articul {
 	text-transform: uppercase;
 	color: #586b89;
 	font-size: .90em;
-	font-weight: 400;
+	font-weight: 500;
+	font-family: Montserrat;
 }
 .rs-17 .rs-product-content .product-content__title {
 	color: #354764;
+	font-family: 'EB Garamond', serif;
 }
 .rs-17 .rs-product-content .product-content__price {
 	font-weight: 400;
-	font-size: 1em;
+	font-size: 1.20em;
 	margin-bottom: 20px;
+	font-family: 'EB Garamond', serif;
+}
+.rs-17 .rs-product-content .product-content__price > i {
+  font-size: .90em;
 }
 .rs-17 .rs-product-content .product-content__description {
-	font-weight: 300;
 	font-size: .90em;
-	font-family: Times New Roman;
+	font-family: Montserrat, sans-serif;
+	font-weight: 100;
+	color: #586b89;
+	margin-top: 35px;
 }
 .rs-17 .rs-product-content .product-content__candys_types	{
 	margin-top: 50px;
 	margin-bottom: 20px;
 }
 .rs-17 .rs-product-content .product-content__candys_types .candys_types__title {
-	font-weight: 400;
-	font-size: 1em;
+	font-size: 1.30em;
+	font-family: 'EB Garamond', serif;
 	margin-bottom: 20px;
 }
 .rs-17 .rs-product-content .product-content__settings {
@@ -202,11 +212,133 @@
 	height: 100px;
 	border-top: 1px solid #dbdbdb;
 	display: flex;
+	grid-gap: 20px;
 	align-items: center;
 	border-bottom: 1px solid #dbdbdb;
 }
+.rs-17 .rs-product-content .product-content__settings .product-content__falling_list {
+  width: 50%;
+	cursor: pointer;
+	max-width: 200px;
+	height: 40px;
+	border: 1px solid #dbdbdb;
+	padding-left: 20px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.rs-17 .rs-product-content .product-content__settings .product-content__falling_list > i {
+	position: absolute;
+	right: 0;
+  margin-right: 20px;
+}
+.rs-17 .rs-product-content .product-content__settings .product-content__setting {
+  color: #252526;
+	font-weight: 400;
+	font-family: "Montserrat";
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	grid-gap: 10px;
+	font-size: .85em;
+}
+.rs-17 .rs-product-content .product-content__settings .product-content__setting .product-content__setting_checkbox {
+	 width: 30px;
+	 height: 30px;
+	 border: 1px solid #dbdbdb;
+	 border-radius: 5px;
+	 cursor: pointer;
+	 margin-top: 9px;
+	 min-width: 30px;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+.rs-17 .rs-product-content .product-content__settings .product-content__setting .product-content__setting_checkbox > i {
+	color: #dbdbdb;
+	transition: .5s;
+	display: none;
+	font-size: 2.70em;
+}
 .rs-17 .rs-product-content .product-content__interface {
+  width: 100%;
+	height: 154px;
+	display: flex;
+	grid-gap: 20px;
+	align-items: center;
+	position: relative;
+	border-bottom: 1px solid #dbdbdb;
+}
+.rs-17 .rs-product-content .product-content__interface .product-content__interface__btn {
+	width: 50%;
+	max-width: 336px;
+	height: 44px;
+	color: #333;
+	border: 1px solid #333333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: .5s;
+	user-select: none;
+}
+.rs-17 .rs-product-content .product-content__interface .product-content__interface__btn:hover {
+	color: #fff;
+	background: #333;
+}
+.rs-17 .rs-product-content .product-content__interface .product-content__interface__status {
+	font-weight: 400;
+	margin-top: 14px;
+	font-size: 1.20em;
+	margin-left: 35px;
+	margin-right: 37px;
+}
+.rs-17 .rs-product-content .product-content__interface .product-content__interface__share {
+	background: #ececec;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.30em;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+}
+.rs-17 .rs-product-content .product-content__interface .product-content__interface__share .inteface__share_links {
+	width: 218px;
+	height: 251px;
+	border-radius: 10px;
+	position: absolute;
+	z-index: 9;
+	-webkit-box-shadow: 1px -1px 24px 10px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 1px -1px 24px 10px rgba(34, 60, 80, 0.2);
+	box-shadow: 1px -1px 24px 10px rgba(34, 60, 80, 0.2);
+	background: #fff;
+	margin-top: 314px;
+	margin-left: -180px;
+}
+.rs-17 .rs-product-content .product-content__charactestics {
+	width: 100%;
+	height: 218px;
 
+}
+.rs-17 .rs-product-content .product-content__charactestic {
+	width: 100%;
+	height: 72px;
+	border-bottom: 1px solid #dbdbdb;
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: Montserrat;
+}
+.rs-17 .rs-product-content .product-content__charactestic > i {
+	position: absolute;
+	right: 0;
+	margin-right: 10px;
 }
 .rs-17 .rs-product .cart-actions .btn-color:hover,
 .rs-17 .rs-product .cart-actions .btn-color:focus{
@@ -456,6 +588,18 @@
     cursor: -moz-zoom-in;
     display: none;
 }
+.rs-17 .product-breadcrumbs {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	padding-left: 36px;
+	background: #fafafb;
+}
+.rs-17 .product-breadcrumbs .product-breadcrumbs__links .product-breadcrumbs__link {
+ 	color: #000;
+	text-decoration: none;
+}
 @media (max-width: 1199px){
 	.rs-17 .rs-product .filterBox .select2-container{
 		margin-bottom: 10px;
@@ -482,5 +626,21 @@
 	.rs-17 .rs-product .product-title{
 		margin-top: 30px;
 		font-size: 22px;
+	}
+}
+@media only screen and (max-device-width: 1024px) {
+	.rs-17 .rs-product-content .product-content__interface .product-content__interface__btn {
+		min-width: 336px;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	.rs-17 .rs-product-content .product-content__interface {
+		flex-wrap: wrap;
+	}
+	.rs-17 .rs-product-content .product-content__interface .product-content__interface__status {
+		margin: 0 auto;
+	}
+	.rs-17 .product-breadcrumbs {
+		padding-left: 0;
 	}
 }

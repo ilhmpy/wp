@@ -12,6 +12,8 @@
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 		<style>
 			body {
 				font-family: 'Open Sans', sans-serif;
@@ -347,17 +349,15 @@
 
 				<!-- rs-breadcrumbs -->
 				<div class="rs-17">
-					<div class="rs-breadcrumbs">
+					<div class="product-breadcrumbs">
 						<div class="container">
 							<div class="row">
-								<div class="col-xs-12">
-									<ul class="breadcrumb">
-										<li><a href="">Главная</a></li>
-										<li><a href="">Каталог</a></li>
-										<li><a href="">Категория товара</a></li>
-										<li class="active">Наименование товара</li>
-									</ul>
-								</div>
+                <div class="product-breadcrumbs__links">
+                  <a href="#" class="product-breadcrumbs__link">Главная</a> /
+                  <a href="#" class="product-breadcrumbs__link">Каталог</a> /
+                  <a href="#" class="product-breadcrumbs__link">Конфеты</a> /
+                  <a href="#" class="product-breadcrumbs__link">Шоколадные игрушки</a>
+                </div>
 							</div>
 						</div>
 					</div>
@@ -366,6 +366,10 @@
 
 				<!-- rs-product -->
 				<link rel="stylesheet" type="text/css" href="css/block-css/rs-product.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 				<div class="rs-17">
 					<div class="rs-product">
 						<div class="container">
@@ -428,94 +432,76 @@
 										<img src="./img/candy_types.png" alt="candy-types" style="width: 233px; height: 48px;">
 									</div>
 									<div class="product-content__settings">
-
+                    <a href="#" class="product-content__setting"><i class="fas fa-info-circle"></i> Оплата и доставка</a>
+                    <a class="product-content__setting"><label class="product-content__setting_checkbox"><i class="fas fa-check-square setting_checkbox"></i></label> Нанести логотип</a>
+                    <div class="product-content__falling_list">Тираж <i class="fas fa-chevron-down"></i></div>
 									</div>
-									<div class="product-content__interface"></div>
-								</div>
-							</div>
-							<div class="row recommended">
-								<h2 class="text-center">вы недавно просматривали</h2>
-								<div id="similar-product-slider" class="owl-carousel">
-									<div class="product-slider-item">
-										<div class="product">
-											<a href="#" class="product-image" style="background-image: url('img/prod_new2.jpg');"></a>
-											<div class="description">
-												<h4><a href="#">Наименование товара</a></h4>
-												<div class="price">
-													<span class="price-sales">5 000&nbsp;<i class="fa fa-rub"></i></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="product-slider-item">
-										<div class="product">
-											<a href="#" class="product-image" style="background-image: url('img/prod_new1.jpg');">
-												<ul class="promotion">
-													<li class="new">NEW</li>
-													<li class="discount">Sale 15%</li>
-												</ul>
-											</a>
-											<div class="description">
-												<h4><a href="#">Наименование товара</a></h4>
-												<div class="price">
-													<span class="price-sales">700&nbsp;<i class="fa fa-rub"></i></span>
-													<span class="price-standard">1 000&nbsp;<i class="fa fa-rub"></i></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="product-slider-item">
-										<div class="product">
-											<a href="#" class="product-image" style="background-image: url('img/prod_new3.jpg');"></a>
-											<div class="description">
-												<h4><a href="#">Наименование товара</a></h4>
-												<div class="price">
-													<span class="price-sales">5 000&nbsp;<i class="fa fa-rub"></i></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="product-slider-item">
-										<div class="product">
-											<a href="#" class="product-image" style="background-image: url('img/prod_new4.jpg');"></a>
-											<div class="description">
-												<h4><a href="#">Наименование товара</a></h4>
-												<div class="price">
-													<span class="price-sales">5 000&nbsp;<i class="fa fa-rub"></i></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="product-slider-item">
-										<div class="product">
-											<a href="#" class="product-image" style="background-image: url('img/prod_new2.jpg');"></a>
-											<div class="description">
-												<h4><a href="#">Наименование товара</a></h4>
-												<div class="price">
-													<span class="price-sales">5 000&nbsp;<i class="fa fa-rub"></i></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="product-slider-item">
-										<div class="product">
-											<a href="#" class="product-image" style="background-image: url('img/prod_new3.jpg');"></a>
-											<div class="description">
-												<h4><a href="#">Наименование товара</a></h4>
-												<div class="price">
-													<span class="price-sales">5 000&nbsp;<i class="fa fa-rub"></i></span>
-												</div>
-											</div>
-										</div>
-									</div>
+									<div class="product-content__interface">
+                    <div class="product-content__interface__btn">ДОБАВИТЬ В КОРЗИНУ</div>
+                    <h3 class="product-content__interface__status"><i class="fas fa-check"></i> В НАЛИЧИИ</h3>
+                    <script src="https://yastatic.net/share2/share.js"></script>
+                    <div class="ya-share2" data-curtain data-shape="round" data-color-scheme="blackwhite" data-limit="0"
+                    data-more-button-type="short" data-services="vkontakte,facebook,odnoklassniki,telegram,viber,whatsapp"></div>
+                  </div>
+                  <div class="product-content__charactestics">
+                    <div class="product-content__charactestic">Характерстики <i class="fas fa-check"></i></div>
+                    <div class="product-content__charactestic">Состав <i class="fas fa-check"></i></div>
+                    <div class="product-content__charactestic">Пищевая ценность <i class="fas fa-check"></i></div>
+                  </div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+        <script>
+           document.querySelector(".product-content__setting_checkbox").addEventListener("click", e => {
+             var checkbox = document.querySelector(".setting_checkbox");
+             if (e.target.className == "product-content__setting_checkbox") checkbox.style.display = "block";
+             if (e.target.className == "fas fa-check-square setting_checkbox") checkbox.style.display = "none";
+           });
+        </script>
 				<!-- /.rs-product -->
 
-		</div><!-- /.wrapper -->
+
+        <!-- .additional-products -->
+        <link rel="stylesheet" href="./css/block-css/rs-additional-products.css">
+        <div class="rs-17">
+          <div class="rs-additional-products">
+            <div class="container">
+              <h1 class="rs-additional-products__title">Дополнительные товары</h1>
+              <div class="rs-additional-products__content">
+                <div class="rs-additional-products__product">
+                  <img alt class="rs-additional-products__img" src="./img/products/openProduct.jpg">
+                  <h3 class="rs-additional-products__title">Дорога к звездам</h3>
+                  <p class="rs-additional-products__description">
+                    Бельгийский шоколад ручной работы (в ассортименте) 100 г
+                  </p>
+                  <h3 class="rs-additional-products__price">от 280 <i class="fa fa-rub"></i>/шт</h3>
+                </div>
+                <div class="rs-additional-products__product">
+                  <img alt class="rs-additional-products__img" src="./img/products/openProduct.jpg">
+                  <h3 class="rs-additional-products__title">Дорога к звездам</h3>
+                  <p class="rs-additional-products__description">
+                    Бельгийский шоколад ручной работы (в ассортименте) 100 г
+                  </p>
+                  <h3 class="rs-additional-products__price">от 280 <i class="fa fa-rub"></i>/шт</h3>
+                </div>
+                <div class="rs-additional-products__product">
+                  <img alt class="rs-additional-products__img" src="./img/products/openProduct.jpg">
+                  <h3 class="rs-additional-products__title">Дорога к звездам</h3>
+                  <p class="rs-additional-products__description">
+                    Бельгийский шоколад ручной работы (в ассортименте) 100 г
+                  </p>
+                  <h3 class="rs-additional-products__price">от 280 <i class="fa fa-rub"></i>/шт</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.additional-products -->
+
+     </div>
+    <!-- /.wrapper -->
 
 		<!-- rs-footer -->
 			<link rel="stylesheet" type="text/css" href="css/block-css/rs-footer.css">
