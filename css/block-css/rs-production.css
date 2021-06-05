@@ -1,0 +1,31 @@
+.rs-17 .rs-production {
+  width: 100%;
+  min-height: 1000px;
+}
+
+.rs-17 .rs-production .rs-production__container {
+  width: 90%;
+  display: flex;
+  max-width: 1704px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.rs-17 .rs-production .rs-production__container .rs-production__img {
+  width: 70%;
+  padding-top: 80px;
+  position: relative;
+}
+
+.rs-17 .rs-production .rs-production__container .rs-production__img .rs-background-img {
+  width: 100%;
+  max-width: 690px;
+  height: 576px;
+  background: #eef0f3;
+  position: absolute;
+  right: 0;
+}
+
+.rs-17 .rs-production .rs-production__container .rs-production__img .rs-img {
+
+}

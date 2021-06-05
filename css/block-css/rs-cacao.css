@@ -1,0 +1,45 @@
+.rs-17 .rs-cacao {
+  width: 100%;
+  height: 594px;
+  background-size: cover;
+  position: relative;
+  background-position: cover;
+}
+
+.rs-17 .rs-cacao  .rs-cacao__text_box {
+  width: 80%;
+  max-width: 550px;
+  height: 208px;
+  background: #eef0f3;
+  position: absolute;
+  right: 0;
+  margin-top: -90px;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'EB Garamond', serif;
+  color: #354764;
+  font-weight: 400;
+  font-size: 1.30em;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .rs-17 .rs-cacao .rs-cacao__text_box {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .rs-17 .rs-cacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-device-width: 2000px) {
+  .rs-17 .rs-cacao > div {
+    position: relative;
+  }
+}

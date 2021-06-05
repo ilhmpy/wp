@@ -1,0 +1,84 @@
+.rs-17 .rs-history {
+  width: 100%;
+  min-height: 542px;
+}
+
+.rs-17 .rs-history .rs-history__title_box {
+  font-family: "EB Garamond", serif;
+}
+
+.rs-17 .rs-history .rs-history__title_box .rs-history__title {
+  color: #e1e2e6;
+  font-size: 8em;
+  z-index: -1;
+  line-height: 50px;
+}
+
+.rs-17 .rs-history .rs-history__title_box .rs-history__subtitle {
+  color: #354764;
+  position: relative;
+  z-index: 2;
+  margin-left: 55px;
+  font-size: 1.80em;
+}
+
+.rs-17 .rs-history .rs-history__texts {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+
+.rs-17 .rs-history .rs-history__texts .rs-history__text  {
+  padding-left: 20px;
+}
+
+.rs-17 .rs-history .rs-history__texts .rs-history__text > p {
+  color: #424242;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-device-width: 600px) {
+  .rs-17 .rs-history .rs-history__title_box .rs-history__title {
+    font-size: 5em;
+  }
+
+  .rs-17 .rs-about .rs-about__content {
+    padding-top: 75px;
+  }
+
+  .rs-17 .rs-history .rs-history__title_box .rs-history__subtitle {
+    margin-left: 3px;
+  }
+
+  .rs-17 .rs-about .rs-about__content .rs-about_content__title {
+    font-size: 1.80em;
+    width: 100%;
+  }
+
+  .rs-17 .rs-about .rs-about__content .rs-about_content__description {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .rs-17 .rs-about {
+    background: 0;
+    min-height: 577px;
+    background: #eef0f3;
+  }
+
+  .rs-17 .rs-history .rs-history__texts {
+    display: block;
+  }
+
+  .rs-17 .rs-history .rs-history__texts .rs-history__text {
+    width: 100%;
+    padding-left: 3px;
+  }
+}
+
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) {
+  .rs-17 .rs-history {
+    min-height: 583px;
+  }
+}
