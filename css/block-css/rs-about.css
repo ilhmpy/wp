@@ -1,0 +1,59 @@
+.rs-17 .rs-about {
+  width: 100%;
+  height: 900px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.rs-17 .rs-about .rs-about__content {
+  width: 80%;
+  margin: 0 auto;
+  height: inherit;
+  text-align: center;
+  padding-top: 120px;
+  max-width: 987px;
+  background: #eef0f3;
+}
+.rs-17 .rs-about .rs-about__content .rs-about_content__about_title {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1em;
+  color: #667691;
+  font-weight: 600;
+}
+.rs-17 .rs-about .rs-about__content .rs-about_content__about_title::before {
+  width: 48px;
+  height: 2px;
+  background: #667691;
+  display: block;
+  content: "";
+  transform: rotate(90deg);
+  margin-top: -60px;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  position: absolute;
+}
+.rs-17 .rs-about .rs-about__content .rs-about_content__title {
+  font-family: 'EB Garamond', serif;
+  width: 70%;
+  display: block;
+  font-size: 2.70em;
+  max-width: 548px;
+  color: #354764;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.rs-17 .rs-about .rs-about__content .rs-about_content__description {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 50px;
+  max-width: 640px;
+  line-height: 24px;
+  color: #424242;
+  font-weight: 300;
+  font-size: 1.30em;
+}

@@ -1,7 +1,20 @@
 .rs-17 .rs-banner {
   width: 100%;
   height: 597px;
-  margin-top: -5px;
   display: flex;
   align-items: center;
+  font-family: 'EB Garamond', serif;
+  color: #354764;
+}
+.rs-17 .rs-banner .rs-banner__title {
+  font-size: 5em;
+}
+.rs-17 .rs-banner .rs-banner__description {
+  font-size: 1.80em;
+  width: 50%;
+}
+@media only screen and (max-device-width: 480px) {
+  .rs-17 .rs-banner .rs-banner__description {
+    width: 100%;
+  }
 }
