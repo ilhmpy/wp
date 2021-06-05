@@ -1,0 +1,44 @@
+.rs-17 .panel-banner {
+  width: 100%;
+  min-height: 480px;
+  display: flex;
+  position: relative;
+  padding-top: 150px;
+  padding-left: 15px;
+}
+
+.rs-17 .panel-banner .panel-banner__title {
+  font-weight: 400;
+  font-size: 4em;
+  color: #354764;
+}
+
+.rs-17 .panel-banner .panel-banner__breadcrumbs {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+}
+
+.rs-17 .panel-banner .panel-banner__breadcrumbs > a {
+  color: #000;
+  font-size: .90em;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+@media only screen and (max-device-width: 600px) {
+  .rs-17 .panel-banner {
+    background-position: cover;
+    justify-content: center;
+  }
+
+  .rs-17 .panel-banner .panel-banner__breadcrumbs {
+    left: 28%;
+  }
+}
+
+@media only screen and (min-device-width: 400px) and (max-device-width: 600px) {
+  .rs-17 .panel-banner .panel-banner__breadcrumbs {
+    left: 30%;
+  }
+}
