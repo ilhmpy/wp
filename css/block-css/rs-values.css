@@ -1,0 +1,38 @@
+.rs-17 .rs-values {
+  width: 100%;
+  min-height: 1200px;
+}
+
+.rs-17 .rs-values .rs-values__texts {
+  width: 90%;
+  max-width: 1700px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.rs-17 .rs-values .rs-values__texts .rs-values__text {
+  width: 50%;
+}
+
+.rs-17 .rs-values .rs-values__texts .rs-values__text > p {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  font-family: "Montserrat";
+}
+
+
+.rs-17 .rs-values .rs-values__texts .rs-values__text .rs-values__text_title {
+  color: #354764;
+  font-size: 2.50em;
+  font-weight: 500;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 20px;
+}
+
+.rs-17 .rs-values .rs-values__texts .rs-values__text .rs-values__text_number {
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  font-size: 1.50em;
+  margin-right: 5px;
+}
